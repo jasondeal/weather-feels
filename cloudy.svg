@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+
+  <!-- Sky -->
+  <rect width="800" height="600" fill="#C4C4C4"/>
+
+  <!-- Peek of blue sky behind clouds -->
+  <rect x="0" y="0" width="800" height="200" fill="#B8D4E8" opacity="0.5"/>
+
+  <!-- Cloud 1 (left) -->
+  <circle cx="108" cy="178" r="42"  fill="#EDEDED" stroke="#D0D0D0" stroke-width="3"/>
+  <circle cx="152" cy="148" r="56"  fill="#EDEDED" stroke="#D0D0D0" stroke-width="3"/>
+  <circle cx="210" cy="162" r="48"  fill="#EDEDED" stroke="#D0D0D0" stroke-width="3"/>
+  <circle cx="246" cy="178" r="34"  fill="#EDEDED" stroke="#D0D0D0" stroke-width="3"/>
+
+  <!-- Cloud 2 (center, brighter) -->
+  <circle cx="375" cy="148" r="44"  fill="white"   stroke="#D0D0D0" stroke-width="3"/>
+  <circle cx="422" cy="115" r="58"  fill="white"   stroke="#D0D0D0" stroke-width="3"/>
+  <circle cx="480" cy="132" r="50"  fill="white"   stroke="#D0D0D0" stroke-width="3"/>
+  <circle cx="518" cy="150" r="36"  fill="white"   stroke="#D0D0D0" stroke-width="3"/>
+
+  <!-- Cloud 3 (right) -->
+  <circle cx="598" cy="190" r="38"  fill="#E8E8E8" stroke="#D0D0D0" stroke-width="3"/>
+  <circle cx="638" cy="160" r="50"  fill="#E8E8E8" stroke="#D0D0D0" stroke-width="3"/>
+  <circle cx="688" cy="175" r="42"  fill="#E8E8E8" stroke="#D0D0D0" stroke-width="3"/>
+  <circle cx="720" cy="190" r="28"  fill="#E8E8E8" stroke="#D0D0D0" stroke-width="3"/>
+
+  <!-- Green ground (same wavy path as sunny) -->
+  <path d="M 0 492 C 80 458, 170 528, 270 492 C 365 458, 445 522, 545 492 C 640 462, 720 514, 800 490 L 800 600 L 0 600 Z"
+        fill="#6B9A3E" stroke="#537A30" stroke-width="3" stroke-linejoin="round"/>
+
+</svg>
