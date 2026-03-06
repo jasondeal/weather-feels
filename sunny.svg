@@ -1,30 +1,73 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky-s" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#4AABF0"/>
+      <stop offset="100%" stop-color="#B8E2F8"/>
+    </linearGradient>
+    <radialGradient id="sun-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#FFFDE7"/>
+      <stop offset="45%"  stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
 
-  <!-- Sky -->
-  <rect width="800" height="600" fill="#87CEEB"/>
+  <!-- ── OUTDOOR SCENE ── -->
+  <rect width="800" height="600" fill="url(#sky-s)"/>
 
-  <!-- Sun rays — drawn first so the sun circle sits on top -->
-  <!-- Sun center: (630, 90), rays extend 150px from center -->
-  <line x1="630" y1="90" x2="630" y2="-60"   stroke="#FFD700" stroke-width="11" stroke-linecap="round"/>
-  <line x1="630" y1="90" x2="736" y2="-16"   stroke="#FFD700" stroke-width="11" stroke-linecap="round"/>
-  <line x1="630" y1="90" x2="780" y2="90"    stroke="#FFD700" stroke-width="11" stroke-linecap="round"/>
-  <line x1="630" y1="90" x2="736" y2="196"   stroke="#FFD700" stroke-width="11" stroke-linecap="round"/>
-  <line x1="630" y1="90" x2="630" y2="240"   stroke="#FFD700" stroke-width="11" stroke-linecap="round"/>
-  <line x1="630" y1="90" x2="524" y2="196"   stroke="#FFD700" stroke-width="11" stroke-linecap="round"/>
-  <line x1="630" y1="90" x2="480" y2="90"    stroke="#FFD700" stroke-width="11" stroke-linecap="round"/>
-  <line x1="630" y1="90" x2="524" y2="-16"   stroke="#FFD700" stroke-width="11" stroke-linecap="round"/>
+  <!-- Sun glow (soft, diffused through fog) -->
+  <circle cx="595" cy="108" r="130" fill="url(#sun-glow)"/>
+  <!-- Sun core -->
+  <circle cx="595" cy="108" r="62" fill="#FFE530"/>
 
-  <!-- Sun circle -->
-  <circle cx="630" cy="90" r="68" fill="#FFD700" stroke="#E8B800" stroke-width="4"/>
+  <!-- Puffy cloud (left) -->
+  <circle cx="118" cy="182" r="40"  fill="white" opacity="0.85"/>
+  <circle cx="158" cy="152" r="54"  fill="white" opacity="0.85"/>
+  <circle cx="214" cy="166" r="46"  fill="white" opacity="0.85"/>
+  <circle cx="250" cy="180" r="32"  fill="white" opacity="0.85"/>
 
-  <!-- Puffy cloud (left side) — overlapping circles -->
-  <circle cx="118" cy="182" r="40"  fill="white" stroke="#D8D8D8" stroke-width="3"/>
-  <circle cx="158" cy="152" r="54"  fill="white" stroke="#D8D8D8" stroke-width="3"/>
-  <circle cx="212" cy="166" r="46"  fill="white" stroke="#D8D8D8" stroke-width="3"/>
-  <circle cx="248" cy="180" r="32"  fill="white" stroke="#D8D8D8" stroke-width="3"/>
-
-  <!-- Green ground (wavy) -->
+  <!-- Green wavy ground -->
   <path d="M 0 492 C 80 458, 170 528, 270 492 C 365 458, 445 522, 545 492 C 640 462, 720 514, 800 490 L 800 600 L 0 600 Z"
-        fill="#5D8A2C" stroke="#4A7022" stroke-width="3" stroke-linejoin="round"/>
+        fill="#5D8A2C"/>
 
+  <!-- ── FOG LAYER (warm tint, semi-transparent over glass areas) ── -->
+  <!-- Top panes -->
+  <rect x="45"  y="35"  width="350" height="233" fill="#FFFDE8" opacity="0.42"/>
+  <rect x="405" y="35"  width="350" height="233" fill="#FFFDE8" opacity="0.42"/>
+  <!-- Bottom panes (slightly denser — fog settles low) -->
+  <rect x="45"  y="278" width="350" height="232" fill="#FFFDE8" opacity="0.52"/>
+  <rect x="405" y="278" width="350" height="232" fill="#FFFDE8" opacity="0.52"/>
+
+  <!-- ── WINDOW FRAME (opaque, on top of scene and fog) ── -->
+  <!-- Top bar -->
+  <rect x="0"   y="0"   width="800" height="35"  fill="#EDE0C4"/>
+  <!-- Left jamb -->
+  <rect x="0"   y="0"   width="45"  height="600" fill="#EDE0C4"/>
+  <!-- Right jamb -->
+  <rect x="755" y="0"   width="45"  height="600" fill="#EDE0C4"/>
+  <!-- Vertical center mullion -->
+  <rect x="395" y="35"  width="10"  height="475" fill="#EDE0C4"/>
+  <!-- Horizontal mullion -->
+  <rect x="45"  y="268" width="710" height="10"  fill="#EDE0C4"/>
+  <!-- Bottom sill -->
+  <rect x="0"   y="510" width="800" height="90"  fill="#DFD0B0"/>
+  <!-- Sill shadow line -->
+  <rect x="0"   y="510" width="800" height="5"   fill="#C5B090" opacity="0.70"/>
+  <!-- Frame inner-edge shadow (adds depth on glass side) -->
+  <rect x="45"  y="35"  width="350" height="5"   fill="#C8B888" opacity="0.40"/>
+  <rect x="405" y="35"  width="350" height="5"   fill="#C8B888" opacity="0.40"/>
+  <rect x="45"  y="35"  width="5"   height="475" fill="#C8B888" opacity="0.40"/>
+  <rect x="750" y="35"  width="5"   height="475" fill="#C8B888" opacity="0.40"/>
+
+  <!-- ── CONDENSATION DRIPS ── -->
+  <path d="M 130 42 Q 132 90 128 138 Q 125 172 130 220 Q 132 248 129 268"
+        stroke="#C0A870" stroke-width="2" fill="none" opacity="0.32" stroke-linecap="round"/>
+  <path d="M 288 38 Q 286 80 290 128 Q 293 162 289 210"
+        stroke="#C0A870" stroke-width="1.5" fill="none" opacity="0.26" stroke-linecap="round"/>
+  <path d="M 478 40 Q 480 86 476 134 Q 473 168 478 222 Q 480 250 477 268"
+        stroke="#C0A870" stroke-width="2" fill="none" opacity="0.32" stroke-linecap="round"/>
+  <path d="M 660 42 Q 658 80 662 122 Q 664 152 660 192"
+        stroke="#C0A870" stroke-width="1.5" fill="none" opacity="0.26" stroke-linecap="round"/>
+  <!-- Playful wipe smear in bottom-right pane -->
+  <ellipse cx="575" cy="375" rx="52" ry="18" fill="#FFFEF5" opacity="0.30"
+           transform="rotate(-12 575 375)"/>
 </svg>

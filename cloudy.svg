@@ -1,31 +1,77 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
 
-  <!-- Sky -->
-  <rect width="800" height="600" fill="#C4C4C4"/>
+  <!-- ── OUTDOOR SCENE ── -->
+  <!-- Overcast sky -->
+  <rect width="800" height="600" fill="#B8C5D0"/>
+  <!-- Faint horizon brightening -->
+  <rect x="0" y="320" width="800" height="280" fill="#C8D4DC" opacity="0.45"/>
 
-  <!-- Peek of blue sky behind clouds -->
-  <rect x="0" y="0" width="800" height="200" fill="#B8D4E8" opacity="0.5"/>
+  <!-- Cloud mass 1 (left, heavy) -->
+  <circle cx="108" cy="170" r="50"  fill="#DADEE2"/>
+  <circle cx="158" cy="136" r="64"  fill="#DEDFE4"/>
+  <circle cx="222" cy="152" r="56"  fill="#DEDFE4"/>
+  <circle cx="264" cy="170" r="40"  fill="#DADEE2"/>
 
-  <!-- Cloud 1 (left) -->
-  <circle cx="108" cy="178" r="42"  fill="#EDEDED" stroke="#D0D0D0" stroke-width="3"/>
-  <circle cx="152" cy="148" r="56"  fill="#EDEDED" stroke="#D0D0D0" stroke-width="3"/>
-  <circle cx="210" cy="162" r="48"  fill="#EDEDED" stroke="#D0D0D0" stroke-width="3"/>
-  <circle cx="246" cy="178" r="34"  fill="#EDEDED" stroke="#D0D0D0" stroke-width="3"/>
+  <!-- Cloud mass 2 (center, brightest) -->
+  <circle cx="388" cy="144" r="52"  fill="white" opacity="0.80"/>
+  <circle cx="440" cy="110" r="66"  fill="white" opacity="0.80"/>
+  <circle cx="504" cy="128" r="56"  fill="white" opacity="0.80"/>
+  <circle cx="544" cy="148" r="40"  fill="white" opacity="0.80"/>
 
-  <!-- Cloud 2 (center, brighter) -->
-  <circle cx="375" cy="148" r="44"  fill="white"   stroke="#D0D0D0" stroke-width="3"/>
-  <circle cx="422" cy="115" r="58"  fill="white"   stroke="#D0D0D0" stroke-width="3"/>
-  <circle cx="480" cy="132" r="50"  fill="white"   stroke="#D0D0D0" stroke-width="3"/>
-  <circle cx="518" cy="150" r="36"  fill="white"   stroke="#D0D0D0" stroke-width="3"/>
+  <!-- Cloud mass 3 (right) -->
+  <circle cx="630" cy="180" r="42"  fill="#D4D8DC"/>
+  <circle cx="672" cy="148" r="54"  fill="#D8DADF"/>
+  <circle cx="722" cy="164" r="44"  fill="#D8DADF"/>
+  <circle cx="754" cy="180" r="30"  fill="#D4D8DC"/>
 
-  <!-- Cloud 3 (right) -->
-  <circle cx="598" cy="190" r="38"  fill="#E8E8E8" stroke="#D0D0D0" stroke-width="3"/>
-  <circle cx="638" cy="160" r="50"  fill="#E8E8E8" stroke="#D0D0D0" stroke-width="3"/>
-  <circle cx="688" cy="175" r="42"  fill="#E8E8E8" stroke="#D0D0D0" stroke-width="3"/>
-  <circle cx="720" cy="190" r="28"  fill="#E8E8E8" stroke="#D0D0D0" stroke-width="3"/>
-
-  <!-- Green ground (same wavy path as sunny) -->
+  <!-- Green ground (muted under overcast) -->
   <path d="M 0 492 C 80 458, 170 528, 270 492 C 365 458, 445 522, 545 492 C 640 462, 720 514, 800 490 L 800 600 L 0 600 Z"
-        fill="#6B9A3E" stroke="#537A30" stroke-width="3" stroke-linejoin="round"/>
+        fill="#6B9A3E"/>
 
+  <!-- ── FOG LAYER (cool silver-white, heavier than sunny) ── -->
+  <!-- Top panes -->
+  <rect x="45"  y="35"  width="350" height="233" fill="#EEF1F6" opacity="0.48"/>
+  <rect x="405" y="35"  width="350" height="233" fill="#EEF1F6" opacity="0.48"/>
+  <!-- Bottom panes (notably denser — cold outside, warm inside) -->
+  <rect x="45"  y="278" width="350" height="232" fill="#EEF1F6" opacity="0.60"/>
+  <rect x="405" y="278" width="350" height="232" fill="#EEF1F6" opacity="0.60"/>
+
+  <!-- ── WINDOW FRAME ── -->
+  <rect x="0"   y="0"   width="800" height="35"  fill="#EDE0C4"/>
+  <rect x="0"   y="0"   width="45"  height="600" fill="#EDE0C4"/>
+  <rect x="755" y="0"   width="45"  height="600" fill="#EDE0C4"/>
+  <rect x="395" y="35"  width="10"  height="475" fill="#EDE0C4"/>
+  <rect x="45"  y="268" width="710" height="10"  fill="#EDE0C4"/>
+  <rect x="0"   y="510" width="800" height="90"  fill="#DFD0B0"/>
+  <rect x="0"   y="510" width="800" height="5"   fill="#C5B090" opacity="0.70"/>
+  <!-- Frame inner shadow (cooler tint) -->
+  <rect x="45"  y="35"  width="350" height="5"   fill="#B0BAC2" opacity="0.38"/>
+  <rect x="405" y="35"  width="350" height="5"   fill="#B0BAC2" opacity="0.38"/>
+  <rect x="45"  y="35"  width="5"   height="475" fill="#B0BAC2" opacity="0.38"/>
+  <rect x="750" y="35"  width="5"   height="475" fill="#B0BAC2" opacity="0.38"/>
+
+  <!-- ── CONDENSATION DRIPS (more prominent — colder outside) ── -->
+  <!-- Top-left pane -->
+  <path d="M 110 40 Q 112 95 108 148 Q 105 186 110 238 Q 112 258 109 268"
+        stroke="#A0B0BC" stroke-width="2.5" fill="none" opacity="0.40" stroke-linecap="round"/>
+  <path d="M 200 36 Q 198 75 202 120 Q 205 156 200 205 Q 197 232 201 268"
+        stroke="#A0B0BC" stroke-width="2" fill="none" opacity="0.34" stroke-linecap="round"/>
+  <path d="M 322 42 Q 324 82 320 128 Q 317 160 322 210"
+        stroke="#A0B0BC" stroke-width="1.5" fill="none" opacity="0.28" stroke-linecap="round"/>
+  <!-- Top-right pane -->
+  <path d="M 470 38 Q 472 90 468 145 Q 465 182 470 238 Q 472 258 468 268"
+        stroke="#A0B0BC" stroke-width="2.5" fill="none" opacity="0.40" stroke-linecap="round"/>
+  <path d="M 598 40 Q 596 82 600 132 Q 603 166 598 218 Q 595 246 599 268"
+        stroke="#A0B0BC" stroke-width="2" fill="none" opacity="0.34" stroke-linecap="round"/>
+  <path d="M 712 44 Q 714 82 710 130 Q 707 160 712 208"
+        stroke="#A0B0BC" stroke-width="1.5" fill="none" opacity="0.28" stroke-linecap="round"/>
+  <!-- Bottom pane drips -->
+  <path d="M 158 286 Q 155 322 159 368 Q 162 396 157 438 Q 154 462 158 510"
+        stroke="#A0B0BC" stroke-width="2" fill="none" opacity="0.32" stroke-linecap="round"/>
+  <path d="M 300 282 Q 302 318 298 365 Q 295 398 299 445"
+        stroke="#A0B0BC" stroke-width="1.5" fill="none" opacity="0.26" stroke-linecap="round"/>
+  <path d="M 515 284 Q 517 326 513 376 Q 510 408 514 458"
+        stroke="#A0B0BC" stroke-width="2" fill="none" opacity="0.32" stroke-linecap="round"/>
+  <path d="M 672 280 Q 670 318 674 366 Q 677 398 672 448 Q 669 478 673 510"
+        stroke="#A0B0BC" stroke-width="1.5" fill="none" opacity="0.26" stroke-linecap="round"/>
 </svg>
