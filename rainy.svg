@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+
+  <!-- Sky -->
+  <rect width="800" height="600" fill="#5C6B7A"/>
+
+  <!-- Storm cloud 1 (left-center, large) -->
+  <circle cx="198" cy="138" r="60"  fill="#3D4F5C" stroke="#2E3D48" stroke-width="3"/>
+  <circle cx="258" cy="105" r="74"  fill="#3D4F5C" stroke="#2E3D48" stroke-width="3"/>
+  <circle cx="332" cy="126" r="65"  fill="#3D4F5C" stroke="#2E3D48" stroke-width="3"/>
+  <circle cx="385" cy="148" r="50"  fill="#3D4F5C" stroke="#2E3D48" stroke-width="3"/>
+
+  <!-- Storm cloud 2 (right) -->
+  <circle cx="492" cy="132" r="52"  fill="#3D4F5C" stroke="#2E3D48" stroke-width="3"/>
+  <circle cx="548" cy="100" r="68"  fill="#3D4F5C" stroke="#2E3D48" stroke-width="3"/>
+  <circle cx="614" cy="122" r="58"  fill="#3D4F5C" stroke="#2E3D48" stroke-width="3"/>
+  <circle cx="658" cy="142" r="42"  fill="#3D4F5C" stroke="#2E3D48" stroke-width="3"/>
+
+  <!-- Rain drops — two staggered rows of diagonal streaks -->
+  <!-- Row 1 -->
+  <line x1="52"  y1="218" x2="65"  y2="248" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
+  <line x1="112" y1="232" x2="125" y2="262" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
+  <line x1="172" y1="218" x2="185" y2="248" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
+  <line x1="232" y1="236" x2="245" y2="266" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
+  <line x1="292" y1="222" x2="305" y2="252" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
+  <line x1="355" y1="238" x2="368" y2="268" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
+  <line x1="415" y1="220" x2="428" y2="250" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
+  <line x1="475" y1="236" x2="488" y2="266" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
+  <line x1="535" y1="222" x2="548" y2="252" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
+  <line x1="598" y1="238" x2="611" y2="268" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
+  <line x1="658" y1="218" x2="671" y2="248" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
+  <line x1="718" y1="232" x2="731" y2="262" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Row 2 (offset, lower) -->
+  <line x1="82"  y1="340" x2="95"  y2="370" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
+  <line x1="158" y1="328" x2="171" y2="358" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
+  <line x1="242" y1="352" x2="255" y2="382" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
+  <line x1="332" y1="336" x2="345" y2="366" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
+  <line x1="422" y1="348" x2="435" y2="378" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
+  <line x1="512" y1="335" x2="525" y2="365" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
+  <line x1="598" y1="352" x2="611" y2="382" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
+  <line x1="682" y1="338" x2="695" y2="368" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
+  <line x1="754" y1="348" x2="767" y2="378" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Puddles at the bottom -->
+  <ellipse cx="148"  cy="572" rx="66"  ry="13" fill="#89CFF0" opacity="0.65"/>
+  <ellipse cx="398"  cy="581" rx="88"  ry="15" fill="#89CFF0" opacity="0.65"/>
+  <ellipse cx="638"  cy="574" rx="74"  ry="13" fill="#89CFF0" opacity="0.65"/>
+
+</svg>

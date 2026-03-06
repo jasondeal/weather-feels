@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+
+  <!-- Sky -->
+  <rect width="800" height="600" fill="#87CEEB"/>
+
+  <!-- Sun rays — drawn first so the sun circle sits on top -->
+  <!-- Sun center: (630, 90), rays extend 150px from center -->
+  <line x1="630" y1="90" x2="630" y2="-60"   stroke="#FFD700" stroke-width="11" stroke-linecap="round"/>
+  <line x1="630" y1="90" x2="736" y2="-16"   stroke="#FFD700" stroke-width="11" stroke-linecap="round"/>
+  <line x1="630" y1="90" x2="780" y2="90"    stroke="#FFD700" stroke-width="11" stroke-linecap="round"/>
+  <line x1="630" y1="90" x2="736" y2="196"   stroke="#FFD700" stroke-width="11" stroke-linecap="round"/>
+  <line x1="630" y1="90" x2="630" y2="240"   stroke="#FFD700" stroke-width="11" stroke-linecap="round"/>
+  <line x1="630" y1="90" x2="524" y2="196"   stroke="#FFD700" stroke-width="11" stroke-linecap="round"/>
+  <line x1="630" y1="90" x2="480" y2="90"    stroke="#FFD700" stroke-width="11" stroke-linecap="round"/>
+  <line x1="630" y1="90" x2="524" y2="-16"   stroke="#FFD700" stroke-width="11" stroke-linecap="round"/>
+
+  <!-- Sun circle -->
+  <circle cx="630" cy="90" r="68" fill="#FFD700" stroke="#E8B800" stroke-width="4"/>
+
+  <!-- Puffy cloud (left side) — overlapping circles -->
+  <circle cx="118" cy="182" r="40"  fill="white" stroke="#D8D8D8" stroke-width="3"/>
+  <circle cx="158" cy="152" r="54"  fill="white" stroke="#D8D8D8" stroke-width="3"/>
+  <circle cx="212" cy="166" r="46"  fill="white" stroke="#D8D8D8" stroke-width="3"/>
+  <circle cx="248" cy="180" r="32"  fill="white" stroke="#D8D8D8" stroke-width="3"/>
+
+  <!-- Green ground (wavy) -->
+  <path d="M 0 492 C 80 458, 170 528, 270 492 C 365 458, 445 522, 545 492 C 640 462, 720 514, 800 490 L 800 600 L 0 600 Z"
+        fill="#5D8A2C" stroke="#4A7022" stroke-width="3" stroke-linejoin="round"/>
+
+</svg>
