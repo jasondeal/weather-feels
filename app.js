@@ -9,9 +9,9 @@ const STORAGE_KEY = 'weatherFeels_zip';
 // bypassing the weather API entirely. Useful for testing every app state.
 //
 // Code structure:  2001XX = Sunny   2002XX = Cloudy   2003XX = Rainy
-//                  XX01 = A lot warmer   XX02 = Warmer       XX03 = A little warmer
+//                  XX01 = Hotter         XX02 = Warmer          XX03 = A little warmer
 //                  XX04 = About the same XX05 = A little cooler XX06 = Cooler
-//                  XX07 = A lot cooler
+//                  XX07 = Colder
 //
 // Rainy states always carry "Rain is expected." (same threshold drives both).
 // Sunny and cloudy states never show a rain notice.
@@ -21,29 +21,29 @@ const STORAGE_KEY = 'weatherFeels_zip';
 
 const STATE_CODES = {
   // ── Sunny ─────────────────────────────────────────────────────────────────
-  '200101': { background: 'sunny',  tempMessage: 'A lot warmer',   rainExpected: false, tempN: 80, tempN1: 70 },
-  '200102': { background: 'sunny',  tempMessage: 'Warmer',         rainExpected: false, tempN: 75, tempN1: 70 },
-  '200103': { background: 'sunny',  tempMessage: 'A little warmer',rainExpected: false, tempN: 72, tempN1: 70 },
+  '200101': { background: 'sunny',  tempMessage: 'Hotter',         rainExpected: false, tempN: 82, tempN1: 70 },
+  '200102': { background: 'sunny',  tempMessage: 'Warmer',         rainExpected: false, tempN: 79, tempN1: 70 },
+  '200103': { background: 'sunny',  tempMessage: 'A little warmer',rainExpected: false, tempN: 75, tempN1: 70 },
   '200104': { background: 'sunny',  tempMessage: 'About the same', rainExpected: false, tempN: 70, tempN1: 70 },
-  '200105': { background: 'sunny',  tempMessage: 'A little cooler',rainExpected: false, tempN: 68, tempN1: 70 },
-  '200106': { background: 'sunny',  tempMessage: 'Cooler',         rainExpected: false, tempN: 65, tempN1: 70 },
-  '200107': { background: 'sunny',  tempMessage: 'A lot cooler',   rainExpected: false, tempN: 60, tempN1: 70 },
+  '200105': { background: 'sunny',  tempMessage: 'A little cooler',rainExpected: false, tempN: 65, tempN1: 70 },
+  '200106': { background: 'sunny',  tempMessage: 'Cooler',         rainExpected: false, tempN: 61, tempN1: 70 },
+  '200107': { background: 'sunny',  tempMessage: 'Colder',         rainExpected: false, tempN: 58, tempN1: 70 },
   // ── Cloudy ────────────────────────────────────────────────────────────────
-  '200201': { background: 'cloudy', tempMessage: 'A lot warmer',   rainExpected: false, tempN: 80, tempN1: 70 },
-  '200202': { background: 'cloudy', tempMessage: 'Warmer',         rainExpected: false, tempN: 75, tempN1: 70 },
-  '200203': { background: 'cloudy', tempMessage: 'A little warmer',rainExpected: false, tempN: 72, tempN1: 70 },
+  '200201': { background: 'cloudy', tempMessage: 'Hotter',         rainExpected: false, tempN: 82, tempN1: 70 },
+  '200202': { background: 'cloudy', tempMessage: 'Warmer',         rainExpected: false, tempN: 79, tempN1: 70 },
+  '200203': { background: 'cloudy', tempMessage: 'A little warmer',rainExpected: false, tempN: 75, tempN1: 70 },
   '200204': { background: 'cloudy', tempMessage: 'About the same', rainExpected: false, tempN: 70, tempN1: 70 },
-  '200205': { background: 'cloudy', tempMessage: 'A little cooler',rainExpected: false, tempN: 68, tempN1: 70 },
-  '200206': { background: 'cloudy', tempMessage: 'Cooler',         rainExpected: false, tempN: 65, tempN1: 70 },
-  '200207': { background: 'cloudy', tempMessage: 'A lot cooler',   rainExpected: false, tempN: 60, tempN1: 70 },
+  '200205': { background: 'cloudy', tempMessage: 'A little cooler',rainExpected: false, tempN: 65, tempN1: 70 },
+  '200206': { background: 'cloudy', tempMessage: 'Cooler',         rainExpected: false, tempN: 61, tempN1: 70 },
+  '200207': { background: 'cloudy', tempMessage: 'Colder',         rainExpected: false, tempN: 58, tempN1: 70 },
   // ── Rainy (rain message always shown) ─────────────────────────────────────
-  '200301': { background: 'rainy',  tempMessage: 'A lot warmer',   rainExpected: true,  tempN: 80, tempN1: 70 },
-  '200302': { background: 'rainy',  tempMessage: 'Warmer',         rainExpected: true,  tempN: 75, tempN1: 70 },
-  '200303': { background: 'rainy',  tempMessage: 'A little warmer',rainExpected: true,  tempN: 72, tempN1: 70 },
+  '200301': { background: 'rainy',  tempMessage: 'Hotter',         rainExpected: true,  tempN: 82, tempN1: 70 },
+  '200302': { background: 'rainy',  tempMessage: 'Warmer',         rainExpected: true,  tempN: 79, tempN1: 70 },
+  '200303': { background: 'rainy',  tempMessage: 'A little warmer',rainExpected: true,  tempN: 75, tempN1: 70 },
   '200304': { background: 'rainy',  tempMessage: 'About the same', rainExpected: true,  tempN: 70, tempN1: 70 },
-  '200305': { background: 'rainy',  tempMessage: 'A little cooler',rainExpected: true,  tempN: 68, tempN1: 70 },
-  '200306': { background: 'rainy',  tempMessage: 'Cooler',         rainExpected: true,  tempN: 65, tempN1: 70 },
-  '200307': { background: 'rainy',  tempMessage: 'A lot cooler',   rainExpected: true,  tempN: 60, tempN1: 70 },
+  '200305': { background: 'rainy',  tempMessage: 'A little cooler',rainExpected: true,  tempN: 65, tempN1: 70 },
+  '200306': { background: 'rainy',  tempMessage: 'Cooler',         rainExpected: true,  tempN: 61, tempN1: 70 },
+  '200307': { background: 'rainy',  tempMessage: 'Colder',         rainExpected: true,  tempN: 58, tempN1: 70 },
 };
 
 // ─── Storage ──────────────────────────────────────────────────────────────────
@@ -160,13 +160,13 @@ function determineDay(daily, timezone) {
 // Compares two high temperatures and returns the appropriate message string.
 function getTempMessage(tempN, tempN1) {
   const diff = Math.round(tempN) - Math.round(tempN1);
-  if (diff >=  8) return 'A lot warmer';
-  if (diff >=  4) return 'Warmer';
-  if (diff >=  1) return 'A little warmer';
-  if (diff ===  0) return 'About the same';
-  if (diff >= -3) return 'A little cooler';
-  if (diff >= -7) return 'Cooler';
-  return 'A lot cooler';
+  if (diff >   10) return 'Hotter';
+  if (diff >=   8) return 'Warmer';
+  if (diff >=   3) return 'A little warmer';
+  if (diff >=  -2) return 'About the same';
+  if (diff >=  -7) return 'A little cooler';
+  if (diff >= -10) return 'Cooler';
+  return 'Colder';
 }
 
 // Returns true if the cumulative precipitation for dayN_date between 8AM and 8PM

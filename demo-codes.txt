@@ -8,13 +8,13 @@ Code format:  2001XX = Sunny background
               2002XX = Cloudy background
               2003XX = Rainy background  (rain message always shown for rainy)
 
-              XX01 = A lot warmer    (Day N is 8°F+ warmer than Day N-1)
-              XX02 = Warmer          (4–7°F warmer)
-              XX03 = A little warmer (1–3°F warmer)
-              XX04 = About the same  (0°F difference)
-              XX05 = A little cooler (1–3°F cooler)
-              XX06 = Cooler          (4–7°F cooler)
-              XX07 = A lot cooler    (8°F+ cooler)
+              XX01 = Hotter          (Day N is more than 10°F warmer than Day N-1)
+              XX02 = Warmer          (8–10°F warmer)
+              XX03 = A little warmer (3–7°F warmer)
+              XX04 = About the same  (within 2°F either way)
+              XX05 = A little cooler (3–7°F cooler)
+              XX06 = Cooler          (8–10°F cooler)
+              XX07 = Colder          (more than 10°F cooler)
 
 Note: Rainy states always display "Rain is expected." Sunny and cloudy states
 never display a rain notice. This matches the app's actual weather logic.
@@ -23,37 +23,37 @@ SUNNY STATES
 ------------
 Code      Background  Temperature Message    Rain?   Temps Shown
 --------  ----------  ---------------------  ------  -------------------
-200101    Sunny       A lot warmer           No      Today 80° / Yest 70°
-200102    Sunny       Warmer                 No      Today 75° / Yest 70°
-200103    Sunny       A little warmer        No      Today 72° / Yest 70°
+200101    Sunny       Hotter                 No      Today 82° / Yest 70°
+200102    Sunny       Warmer                 No      Today 79° / Yest 70°
+200103    Sunny       A little warmer        No      Today 75° / Yest 70°
 200104    Sunny       About the same         No      Today 70° / Yest 70°
-200105    Sunny       A little cooler        No      Today 68° / Yest 70°
-200106    Sunny       Cooler                 No      Today 65° / Yest 70°
-200107    Sunny       A lot cooler           No      Today 60° / Yest 70°
+200105    Sunny       A little cooler        No      Today 65° / Yest 70°
+200106    Sunny       Cooler                 No      Today 61° / Yest 70°
+200107    Sunny       Colder                 No      Today 58° / Yest 70°
 
 CLOUDY STATES
 -------------
 Code      Background  Temperature Message    Rain?   Temps Shown
 --------  ----------  ---------------------  ------  -------------------
-200201    Cloudy      A lot warmer           No      Today 80° / Yest 70°
-200202    Cloudy      Warmer                 No      Today 75° / Yest 70°
-200203    Cloudy      A little warmer        No      Today 72° / Yest 70°
+200201    Cloudy      Hotter                 No      Today 82° / Yest 70°
+200202    Cloudy      Warmer                 No      Today 79° / Yest 70°
+200203    Cloudy      A little warmer        No      Today 75° / Yest 70°
 200204    Cloudy      About the same         No      Today 70° / Yest 70°
-200205    Cloudy      A little cooler        No      Today 68° / Yest 70°
-200206    Cloudy      Cooler                 No      Today 65° / Yest 70°
-200207    Cloudy      A lot cooler           No      Today 60° / Yest 70°
+200205    Cloudy      A little cooler        No      Today 65° / Yest 70°
+200206    Cloudy      Cooler                 No      Today 61° / Yest 70°
+200207    Cloudy      Colder                 No      Today 58° / Yest 70°
 
 RAINY STATES
 ------------
 Code      Background  Temperature Message    Rain?   Temps Shown
 --------  ----------  ---------------------  ------  -------------------
-200301    Rainy       A lot warmer           Yes     Today 80° / Yest 70°
-200302    Rainy       Warmer                 Yes     Today 75° / Yest 70°
-200303    Rainy       A little warmer        Yes     Today 72° / Yest 70°
+200301    Rainy       Hotter                 Yes     Today 82° / Yest 70°
+200302    Rainy       Warmer                 Yes     Today 79° / Yest 70°
+200303    Rainy       A little warmer        Yes     Today 75° / Yest 70°
 200304    Rainy       About the same         Yes     Today 70° / Yest 70°
-200305    Rainy       A little cooler        Yes     Today 68° / Yest 70°
-200306    Rainy       Cooler                 Yes     Today 65° / Yest 70°
-200307    Rainy       A lot cooler           Yes     Today 60° / Yest 70°
+200305    Rainy       A little cooler        Yes     Today 65° / Yest 70°
+200306    Rainy       Cooler                 Yes     Today 61° / Yest 70°
+200307    Rainy       Colder                 Yes     Today 58° / Yest 70°
 
 NOTES
 -----
