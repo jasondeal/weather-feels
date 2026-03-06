@@ -1,49 +1,106 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
 
-  <!-- Sky -->
-  <rect width="800" height="600" fill="#5C6B7A"/>
+  <!-- ── OUTDOOR SCENE ── -->
+  <rect width="800" height="600" fill="#4A5568"/>
 
-  <!-- Storm cloud 1 (left-center, large) -->
-  <circle cx="198" cy="138" r="60"  fill="#3D4F5C" stroke="#2E3D48" stroke-width="3"/>
-  <circle cx="258" cy="105" r="74"  fill="#3D4F5C" stroke="#2E3D48" stroke-width="3"/>
-  <circle cx="332" cy="126" r="65"  fill="#3D4F5C" stroke="#2E3D48" stroke-width="3"/>
-  <circle cx="385" cy="148" r="50"  fill="#3D4F5C" stroke="#2E3D48" stroke-width="3"/>
+  <!-- Storm cloud 1 (left-center) -->
+  <circle cx="198" cy="138" r="60"  fill="#3D4F5C"/>
+  <circle cx="258" cy="105" r="74"  fill="#3D4F5C"/>
+  <circle cx="332" cy="126" r="65"  fill="#3D4F5C"/>
+  <circle cx="385" cy="148" r="50"  fill="#3D4F5C"/>
 
   <!-- Storm cloud 2 (right) -->
-  <circle cx="492" cy="132" r="52"  fill="#3D4F5C" stroke="#2E3D48" stroke-width="3"/>
-  <circle cx="548" cy="100" r="68"  fill="#3D4F5C" stroke="#2E3D48" stroke-width="3"/>
-  <circle cx="614" cy="122" r="58"  fill="#3D4F5C" stroke="#2E3D48" stroke-width="3"/>
-  <circle cx="658" cy="142" r="42"  fill="#3D4F5C" stroke="#2E3D48" stroke-width="3"/>
+  <circle cx="492" cy="132" r="52"  fill="#3D4F5C"/>
+  <circle cx="548" cy="100" r="68"  fill="#3D4F5C"/>
+  <circle cx="614" cy="122" r="58"  fill="#3D4F5C"/>
+  <circle cx="658" cy="142" r="42"  fill="#3D4F5C"/>
 
-  <!-- Rain drops — two staggered rows of diagonal streaks -->
-  <!-- Row 1 -->
-  <line x1="52"  y1="218" x2="65"  y2="248" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
-  <line x1="112" y1="232" x2="125" y2="262" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
-  <line x1="172" y1="218" x2="185" y2="248" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
-  <line x1="232" y1="236" x2="245" y2="266" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
-  <line x1="292" y1="222" x2="305" y2="252" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
-  <line x1="355" y1="238" x2="368" y2="268" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
-  <line x1="415" y1="220" x2="428" y2="250" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
-  <line x1="475" y1="236" x2="488" y2="266" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
-  <line x1="535" y1="222" x2="548" y2="252" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
-  <line x1="598" y1="238" x2="611" y2="268" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
-  <line x1="658" y1="218" x2="671" y2="248" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
-  <line x1="718" y1="232" x2="731" y2="262" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
+  <!-- Background rain streaks (outside, behind glass) -->
+  <line x1="52"  y1="218" x2="65"  y2="248" stroke="#89CFF0" stroke-width="2.5" stroke-linecap="round" opacity="0.60"/>
+  <line x1="112" y1="232" x2="125" y2="262" stroke="#89CFF0" stroke-width="2.5" stroke-linecap="round" opacity="0.60"/>
+  <line x1="172" y1="218" x2="185" y2="248" stroke="#89CFF0" stroke-width="2.5" stroke-linecap="round" opacity="0.60"/>
+  <line x1="232" y1="236" x2="245" y2="266" stroke="#89CFF0" stroke-width="2.5" stroke-linecap="round" opacity="0.60"/>
+  <line x1="292" y1="222" x2="305" y2="252" stroke="#89CFF0" stroke-width="2.5" stroke-linecap="round" opacity="0.60"/>
+  <line x1="355" y1="238" x2="368" y2="268" stroke="#89CFF0" stroke-width="2.5" stroke-linecap="round" opacity="0.60"/>
+  <line x1="415" y1="220" x2="428" y2="250" stroke="#89CFF0" stroke-width="2.5" stroke-linecap="round" opacity="0.60"/>
+  <line x1="475" y1="236" x2="488" y2="266" stroke="#89CFF0" stroke-width="2.5" stroke-linecap="round" opacity="0.60"/>
+  <line x1="535" y1="222" x2="548" y2="252" stroke="#89CFF0" stroke-width="2.5" stroke-linecap="round" opacity="0.60"/>
+  <line x1="598" y1="238" x2="611" y2="268" stroke="#89CFF0" stroke-width="2.5" stroke-linecap="round" opacity="0.60"/>
+  <line x1="658" y1="218" x2="671" y2="248" stroke="#89CFF0" stroke-width="2.5" stroke-linecap="round" opacity="0.60"/>
+  <line x1="718" y1="232" x2="731" y2="262" stroke="#89CFF0" stroke-width="2.5" stroke-linecap="round" opacity="0.60"/>
+  <line x1="82"  y1="340" x2="95"  y2="370" stroke="#89CFF0" stroke-width="2.5" stroke-linecap="round" opacity="0.50"/>
+  <line x1="158" y1="328" x2="171" y2="358" stroke="#89CFF0" stroke-width="2.5" stroke-linecap="round" opacity="0.50"/>
+  <line x1="242" y1="352" x2="255" y2="382" stroke="#89CFF0" stroke-width="2.5" stroke-linecap="round" opacity="0.50"/>
+  <line x1="332" y1="336" x2="345" y2="366" stroke="#89CFF0" stroke-width="2.5" stroke-linecap="round" opacity="0.50"/>
+  <line x1="422" y1="348" x2="435" y2="378" stroke="#89CFF0" stroke-width="2.5" stroke-linecap="round" opacity="0.50"/>
+  <line x1="512" y1="335" x2="525" y2="365" stroke="#89CFF0" stroke-width="2.5" stroke-linecap="round" opacity="0.50"/>
+  <line x1="598" y1="352" x2="611" y2="382" stroke="#89CFF0" stroke-width="2.5" stroke-linecap="round" opacity="0.50"/>
+  <line x1="682" y1="338" x2="695" y2="368" stroke="#89CFF0" stroke-width="2.5" stroke-linecap="round" opacity="0.50"/>
 
-  <!-- Row 2 (offset, lower) -->
-  <line x1="82"  y1="340" x2="95"  y2="370" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
-  <line x1="158" y1="328" x2="171" y2="358" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
-  <line x1="242" y1="352" x2="255" y2="382" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
-  <line x1="332" y1="336" x2="345" y2="366" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
-  <line x1="422" y1="348" x2="435" y2="378" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
-  <line x1="512" y1="335" x2="525" y2="365" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
-  <line x1="598" y1="352" x2="611" y2="382" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
-  <line x1="682" y1="338" x2="695" y2="368" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
-  <line x1="754" y1="348" x2="767" y2="378" stroke="#89CFF0" stroke-width="3" stroke-linecap="round"/>
+  <!-- Puddles -->
+  <ellipse cx="148" cy="572" rx="66" ry="13" fill="#89CFF0" opacity="0.55"/>
+  <ellipse cx="398" cy="581" rx="88" ry="15" fill="#89CFF0" opacity="0.55"/>
+  <ellipse cx="638" cy="574" rx="74" ry="13" fill="#89CFF0" opacity="0.55"/>
 
-  <!-- Puddles at the bottom -->
-  <ellipse cx="148"  cy="572" rx="66"  ry="13" fill="#89CFF0" opacity="0.65"/>
-  <ellipse cx="398"  cy="581" rx="88"  ry="15" fill="#89CFF0" opacity="0.65"/>
-  <ellipse cx="638"  cy="574" rx="74"  ry="13" fill="#89CFF0" opacity="0.65"/>
+  <!-- ── FOG LAYER (blue-gray mist, lighter — rain on glass is the main effect) ── -->
+  <rect x="45"  y="35"  width="350" height="233" fill="#DDE8F2" opacity="0.30"/>
+  <rect x="405" y="35"  width="350" height="233" fill="#DDE8F2" opacity="0.30"/>
+  <rect x="45"  y="278" width="350" height="232" fill="#DDE8F2" opacity="0.36"/>
+  <rect x="405" y="278" width="350" height="232" fill="#DDE8F2" opacity="0.36"/>
 
+  <!-- ── WINDOW FRAME ── -->
+  <rect x="0"   y="0"   width="800" height="35"  fill="#EDE0C4"/>
+  <rect x="0"   y="0"   width="45"  height="600" fill="#EDE0C4"/>
+  <rect x="755" y="0"   width="45"  height="600" fill="#EDE0C4"/>
+  <rect x="395" y="35"  width="10"  height="475" fill="#EDE0C4"/>
+  <rect x="45"  y="268" width="710" height="10"  fill="#EDE0C4"/>
+  <rect x="0"   y="510" width="800" height="90"  fill="#DFD0B0"/>
+  <rect x="0"   y="510" width="800" height="5"   fill="#C5B090" opacity="0.70"/>
+  <!-- Frame inner shadow (cool blue-gray tint for rainy mood) -->
+  <rect x="45"  y="35"  width="350" height="5"   fill="#8A9EAE" opacity="0.38"/>
+  <rect x="405" y="35"  width="350" height="5"   fill="#8A9EAE" opacity="0.38"/>
+  <rect x="45"  y="35"  width="5"   height="475" fill="#8A9EAE" opacity="0.38"/>
+  <rect x="750" y="35"  width="5"   height="475" fill="#8A9EAE" opacity="0.38"/>
+
+  <!-- ── RAIN ON GLASS (water rivulets running down the window surface) ── -->
+  <!-- Top-left pane -->
+  <path d="M 90  38 Q 92  80 88  132 Q 85  175 91  228 Q 94  254 90  268"
+        stroke="#B0CCE0" stroke-width="3" fill="none" opacity="0.78" stroke-linecap="round"/>
+  <path d="M 148 40 Q 150 76 146 120 Q 143 155 148 202 Q 151 232 147 268"
+        stroke="#B0CCE0" stroke-width="2" fill="none" opacity="0.62" stroke-linecap="round"/>
+  <path d="M 224 42 Q 222 88 226 138 Q 229 170 224 222 Q 221 250 225 268"
+        stroke="#B0CCE0" stroke-width="2.5" fill="none" opacity="0.68" stroke-linecap="round"/>
+  <path d="M 300 36 Q 302 74 298 118 Q 295 152 300 204 Q 303 236 299 268"
+        stroke="#B0CCE0" stroke-width="2" fill="none" opacity="0.58" stroke-linecap="round"/>
+  <path d="M 362 44 Q 360 82 364 126 Q 367 160 362 212 Q 359 244 363 268"
+        stroke="#B0CCE0" stroke-width="1.5" fill="none" opacity="0.50" stroke-linecap="round"/>
+  <!-- Top-right pane -->
+  <path d="M 432 38 Q 434 82 430 136 Q 427 174 433 228 Q 436 254 431 268"
+        stroke="#B0CCE0" stroke-width="3" fill="none" opacity="0.78" stroke-linecap="round"/>
+  <path d="M 508 42 Q 506 84 510 132 Q 513 165 508 218 Q 505 250 509 268"
+        stroke="#B0CCE0" stroke-width="2" fill="none" opacity="0.62" stroke-linecap="round"/>
+  <path d="M 578 38 Q 580 76 576 124 Q 573 160 578 208 Q 581 240 577 268"
+        stroke="#B0CCE0" stroke-width="2.5" fill="none" opacity="0.68" stroke-linecap="round"/>
+  <path d="M 652 44 Q 650 86 654 134 Q 657 170 652 222 Q 649 252 653 268"
+        stroke="#B0CCE0" stroke-width="2" fill="none" opacity="0.58" stroke-linecap="round"/>
+  <path d="M 720 40 Q 722 80 718 124 Q 715 158 720 208 Q 723 238 719 268"
+        stroke="#B0CCE0" stroke-width="1.5" fill="none" opacity="0.50" stroke-linecap="round"/>
+  <!-- Bottom-left pane -->
+  <path d="M 90  278 Q 92  320 88  370 Q 85  410 91  458 Q 94  482 90  510"
+        stroke="#B0CCE0" stroke-width="3" fill="none" opacity="0.72" stroke-linecap="round"/>
+  <path d="M 170 278 Q 172 318 168 364 Q 165 400 170 448 Q 173 474 169 510"
+        stroke="#B0CCE0" stroke-width="2" fill="none" opacity="0.56" stroke-linecap="round"/>
+  <path d="M 258 280 Q 256 324 260 374 Q 263 408 258 458 Q 255 484 259 510"
+        stroke="#B0CCE0" stroke-width="2.5" fill="none" opacity="0.62" stroke-linecap="round"/>
+  <path d="M 342 278 Q 344 318 340 366 Q 337 402 342 450 Q 345 478 341 510"
+        stroke="#B0CCE0" stroke-width="2" fill="none" opacity="0.52" stroke-linecap="round"/>
+  <!-- Bottom-right pane -->
+  <path d="M 432 278 Q 434 320 430 370 Q 427 410 433 458 Q 436 482 432 510"
+        stroke="#B0CCE0" stroke-width="3" fill="none" opacity="0.72" stroke-linecap="round"/>
+  <path d="M 520 280 Q 518 324 522 374 Q 525 408 520 458 Q 517 482 521 510"
+        stroke="#B0CCE0" stroke-width="2" fill="none" opacity="0.56" stroke-linecap="round"/>
+  <path d="M 602 278 Q 604 320 600 370 Q 597 404 602 450 Q 605 478 601 510"
+        stroke="#B0CCE0" stroke-width="2.5" fill="none" opacity="0.62" stroke-linecap="round"/>
+  <path d="M 690 280 Q 692 320 688 370 Q 685 402 690 450 Q 693 476 689 510"
+        stroke="#B0CCE0" stroke-width="1.5" fill="none" opacity="0.52" stroke-linecap="round"/>
 </svg>
